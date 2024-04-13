@@ -26,7 +26,7 @@ const Predict = () => {
       formData.append("image", imageFile); // Replace imageFile with your file variable
 
       const response = await fetch(
-        "http://127.0.0.1:5000/estimate_food_volume",
+        "http://127.0.0.1:5000/predict",
         {
           method: "POST",
           body: formData,
